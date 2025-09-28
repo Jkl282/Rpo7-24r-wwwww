@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сайт о Minecraft сервере PrestigeMC">
+  <title>Prestige MC - Эпоха великих приключений</title>
+  <link rel="icon" href="/image's/logotype-round.jpg" type="image/png">
+  <link rel="stylesheet" href="/css's/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <a href="/html's/index.html" class="logotype">
+        <img src="/image's/logotype.jpg" class="logo-img" alt="Prestige MC">
+        <span class="logo-text">Prestige MC</span>
+      </a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav>
+        <ul class="nav-list" id="navList">
+          <li>  
+            <a href="/html's/index.html" class="nav-link privileges">
+              <i class="fa-solid fa-house nav-icon"></i>
+              Главная
+            </a>
+          </li>
+          <li>
+            <a href="/html's/index.html#store" class="nav-link">
+              <i class="fa-solid fa-store nav-icon"></i>
+              Магазин
+            </a>
+          </li>
+          <li>
+            <a href="/html's/description.html" class="nav-link">
+              <i class="fa-solid fa-crown nav-icon"></i>
+              Описание бонусов
+            </a>
+          </li>
+          <li>
+            <a href="/html's/rules.html" class="nav-link">
+              <i class="fa-solid fa-book nav-icon"></i>
+              Правила
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+<section class="hero">
+  <div class="hero-bg">
+    <img src="/image's/headphoto.png" alt="Фон Prestige MC">
+    <img src="/image's/flying.png" alt="Доп. изображение" class="hero-inner">
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-1">PRESTIGE MC</h1>
+    <h1 class="hero-2">ЭПОХА ВЕЛИКИХ ПРИКЛЮЧЕНИЙ</h1>
+    <h2 class="hero-3">Путешествуй по мирам без границ</h2>
+    <h2 class="hero-4">Найди друзей. Построй империю.</h2>
+    <a href="https://youtube.com/shorts/3k-AuWHfguQ?si=IlRY_XrUS8KlItbW" class="cta-button">
+      Начать приключение <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+  
+</section>
+
+
+<section class="join-cta container" aria-label="Присоединяйтесь">
+  <div class="join-card">
+    <div class="join-media">
+      <img src="/image's/archer.jpg" alt="Арчер" class="join-img">
+    </div>
+
+    <div class="join-body">
+      <h3 class="join-title">Присоединяйтесь к нам</h3>
+      <p class="join-sub">
+        прямо сейчас и начинайте игру!<br>
+        Выбери свою роль и отыгрывай её. У нас можно стать кем угодно, даже космонавтом!
+      </p>
+    </div>
+
+    <div class="join-side">
+      <div class="join-meta">Рекомендуемая версия <strong>1.16.5</strong></div>
+      <button class="server-ip-btn primary"
+              data-ip="mc.prestige.kz"
+              aria-label="Копировать IP">
+        mc.prestige.kz
+        <i class="fa-regular fa-copy" aria-hidden="true" style="margin-left:8px"></i>
+      </button>
+
+      <span id="copy-msg" style="display:none; margin-left:10px; color:green;">Скопировано!</span>
+    </div>
+  </div>
+</section>
+
+<section id="store" class="store">
+  <h2 class="store-title">Привилегии</h2>
+
+  <div class="store-items">
+    <div class="card" style="background:url('/store_photo/11.png') center/cover">
+      <div class="card-price">299</div>
+      <div class="card-bottom">
+        <div class="card-name">HERO</div>
+        <a href="#" class="buy-btn" data-item="HERO" data-price="299">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/12.png') center/cover">
+      <div class="card-price">499</div>
+      <div class="card-bottom">
+        <div class="card-name">TITAN</div>
+        <a href="#" class="buy-btn" data-item="TITAN" data-price="499">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/13.png') center/cover">
+      <div class="card-price">799</div>
+      <div class="card-bottom">
+        <div class="card-name">AVENGER</div>
+        <a href="#" class="buy-btn" data-item="AVENGER" data-price="799">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/14.png') center/cover">
+      <div class="card-price">999</div>
+      <div class="card-bottom">
+        <div class="card-name">MAGISTER</div>
+        <a href="#" class="buy-btn" data-item="MAGISTER" data-price="999">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/15.png') center/cover">
+      <div class="card-price">1199</div>
+      <div class="card-bottom">
+        <div class="card-name">IMPERATOR</div>
+        <a href="#" class="buy-btn" data-item="IMPERATOR" data-price="1199">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/16.png') center/cover">
+      <div class="card-price">1499</div>
+      <div class="card-bottom">
+        <div class="card-name">DRAGON</div>
+        <a href="#" class="buy-btn" data-item="DRAGON" data-price="1499">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/17.png') center/cover">
+      <div class="card-price">1999</div>
+      <div class="card-bottom">
+        <div class="card-name">COBRA</div>
+        <a href="#" class="buy-btn" data-item="COBRA" data-price="1999">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/18.png') center/cover">
+      <div class="card-price">2499</div>
+      <div class="card-bottom">
+        <div class="card-name">D.HELPER</div>
+        <a href="#" class="buy-btn" data-item="D.HELPER" data-price="2499">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/19.png') center/cover">
+      <div class="card-price">3499</div>
+      <div class="card-bottom">
+        <div class="card-name">OVERLORD</div>
+        <a href="#" class="buy-btn" data-item="OVERLORD" data-price="3499">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/20.png') center/cover">
+      <div class="card-price">5999</div>
+      <div class="card-bottom">
+        <div class="card-name">MASTER</div>
+        <a href="#" class="buy-btn" data-item="MASTER" data-price="5999">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/21.png') center/cover">
+      <div class="card-price">7999</div>
+      <div class="card-bottom">
+        <div class="card-name">SILVER</div>
+        <a href="#" class="buy-btn" data-item="SILVER" data-price="7999">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/22.png') center/cover">
+      <div class="card-price">9999</div>
+      <div class="card-bottom">
+        <div class="card-name">ENIGMA</div>
+        <a href="#" class="buy-btn" data-item="ENIGMA" data-price="9999">Купить</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="store" class="store">
+  <h2 class="store-title">Сундуки</h2>
+
+  <div class="store-items">
+    <div class="card" style="background:url('/store_photo/1.png') center/cover">
+      <div class="card-price">499</div>
+      <div class="card-bottom">
+        <div class="card-name">Сундук нуб</div>
+        <a href="#" class="buy-btn" data-item="Сундук нуб" data-price="499">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/2.png') center/cover">
+      <div class="card-price">799</div>
+      <div class="card-bottom">
+        <div class="card-name">Сундук искатель приключений</div>
+        <a href="#" class="buy-btn" data-item="Сундук искатель приключений" data-price="799">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/3.png') center/cover">
+      <div class="card-price">1199</div>
+      <div class="card-bottom">
+        <div class="card-name">Сундук воин</div>
+        <a href="#" class="buy-btn" data-item="Сундук воин" data-price="1199">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/4.png') center/cover">
+      <div class="card-price">1499</div>
+      <div class="card-bottom">
+        <div class="card-name">Сундук маг</div>
+        <a href="#" class="buy-btn" data-item="Сундук маг" data-price="1499">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/5.png') center/cover">
+      <div class="card-price">1999</div>
+      <div class="card-bottom">
+        <div class="card-name">Сундук легенд</div>
+        <a href="#" class="buy-btn" data-item="Сундук легенд" data-price="1999">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/6.png') center/cover">
+      <div class="card-price">2999</div>
+      <div class="card-bottom">
+        <div class="card-name">Сундук дракон</div>
+        <a href="#" class="buy-btn" data-item="Сундук дракон" data-price="2999">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/7.png') center/cover">
+      <div class="card-price">4999</div>
+      <div class="card-bottom">
+        <div class="card-name">Сундук бессмертие</div>
+        <a href="#" class="buy-btn" data-item="Сундук бессмертие" data-price="4999">Купить</a>
+      </div>
+    </div>
+
+    <div class="card" style="background:url('/store_photo/8.png') center/cover">
+      <div class="card-price">7999</div>
+      <div class="card-bottom">
+        <div class="card-name">Сундук создатель</div>
+        <a href="#" class="buy-btn" data-item="Сундук создатель" data-price="7999">Купить</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="store" class="store">
+      <h2 class="store-title">Услуги</h2>
+      <div class="store-items">
+        <div class="card"
+     style="
+       background-image: url('/store_photo/razmute.png');
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;">
+  <div class="card-price">1999</div>
+  <div class="card-bottom">
+    <div class="card-name">Размут</div>
+    <a href="#" class="buy-btn" data-item="Размут" data-price="1999">Купить</a>
+  </div>
+</div>
+
+       <div class="card"
+     style="
+       background-image: url('/store_photo/razban.png');
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;">
+  <div class="card-price">4999</div>
+  <div class="card-bottom">
+    <div class="card-name">Разбан</div>
+    <a href="#" class="buy-btn" data-item="Разбан" data-price="4999">Купить</a>
+  </div>
+</div>
+        </div>
+     </section>
+  </main>
+
+  <div id="buyModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalItemName">Название</h2>
+      <p>Цена: <span id="modalItemPrice">0</span> ₸</p>
+
+      <form id="paymentForm">
+        <input type="text" placeholder="Номер карты" required>
+        <input type="text" placeholder="CVC" required>
+        <input type="text" placeholder="Срок действия (MM/YY)" required>
+        <input type="text" placeholder="Имя владельца карты" required>
+        <input type="text" placeholder="Ник для оплаты" required>
+        <button type="submit" class="pay-btn">Оплатить</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="successModal" class="modal success-modal">
+    <div class="modal-content">
+      <div class="success-icon">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h2>Покупка успешна!</h2>
+      <div class="success-details">
+        <p class="success-item">Привилегия: <span id="successItemName">HERO</span></p>
+        <p class="success-price">Цена: <span id="successItemPrice">299</span> ₸</p>
+      </div>
+      <p class="success-message">🎯 Миссия выполнена!
+Заказ успешно обработан. Все бонусы будут отправлены на ваш аккаунт.</p>
+      <button class="success-close-btn">Отлично!</button>
+    </div>
+  </div>
+
+<footer>
+  <div class="site-footer">
+    <div class="footer-left">
+      <h3>Для обратной связи:</h3>
+      <div class="contacts">
+        <p>Телефон: +7 (777) 822-69-56</p>
+        <p>Телефон: +7 (701) 123-45-67</p>
+        <p>Телефон: +7 (705) 555-55-55</p>
+        <p>Email: info@prestigemc.com</p>
+        <p>Email: support@prestigemc.com</p>
+        <p>Email: help@prestigemc.com</p>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://wa.me/+77778226956" class="social-card whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Наш WhatsApp</span>
+        </a>
+        <a href="https://youtube.com" class="social-card youtube">
+          <i class="fa-brands fa-youtube"></i>
+          <span>Наш YouTube</span>
+        </a>
+        <a href="https://discord.com" class="social-card discord">
+          <i class="fa-brands fa-discord"></i>
+          <span>Discord Сервер</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <h3>Путешествие по нашему серверу:</h3>
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/u7kdVe8q5zs?autoplay=1&mute=1&loop=1&playlist=u7kdVe8q5zs&controls=0&showinfo=0&modestbranding=1&rel=0" 
+          title="YouTube video" 
+          frameborder="0" 
+          allow="autoplay; encrypted-media" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    © 2025 PrestigeMC. Все права защищены.
+  </div>
+</footer>
+
+
+  <script src="/script's/script.js"></script>
+</body>
+</html>
